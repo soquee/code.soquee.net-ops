@@ -1,0 +1,14 @@
+image: freebsd/latest
+packages:
+  - go
+  - terraform
+sources:
+  - https://git.sr.ht/~samwhited/code.soquee.net-ops
+tasks:
+  - info: |
+      go version
+      go env
+      terraform version
+  - fmt: |
+      cd code.soquee.net-ops/
+      terraform fmt -check -list -recursive ./

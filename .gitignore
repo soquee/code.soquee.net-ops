@@ -1,0 +1,17 @@
+authentication.json
+*.backup
+*.bak
+Cargo.toml
+*.dump
+.env
+*.log
+*.out
+output-qemu/
+packer_cache/
+*.plan
+*.state.json
+.terraform
+terraform.tfvars
+*.tfstate*
+*.tmp
+*-vars.json

@@ -157,3 +157,17 @@ resource "github_repository" "testlog" {
   allow_rebase_merge = false
   has_downloads      = false
 }
+
+resource "github_repository" "code-ops" {
+  name         = "code.soquee.net-ops"
+  description  = "Terraform plans and other opsy things for configuring code.soquee.net. This is a mirror of the official repo."
+  homepage_url = "https://git.sr.ht/~samwhited/code.soquee.net-ops"
+
+  private            = false
+  has_issues         = false
+  has_projects       = false
+  has_wiki           = false
+  allow_merge_commit = false
+  allow_rebase_merge = false
+  has_downloads      = false
+}
